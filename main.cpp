@@ -85,28 +85,74 @@
 
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// template <class T>
+// class Box
+// {
+//   T value;
+
+// public:
+//   void set(T val) { value = val; }
+//   T get() { return value; }
+// };
+
+// int main()
+// {
+//   Box<int> intBox;
+//   intBox.set(100);
+
+//   Box<string> strBox;
+//   strBox.set("Hello");
+
+//   cout << intBox.get()<<" ";  // Output: 100
+//   cout << strBox.get();       // Output: Hello
+
+// }
+
 #include <iostream>
 using namespace std;
 
-template <class T>
-class Box
+class Complex
 {
-  T value;
+    float real, imag;
 
 public:
-  void set(T val) { value = val; }
-  T get() { return value; }
+    Complex()
+    {
+        real = imag = 0;
+    }
+
+    Complex(float r, float i)
+    {
+        real = r;
+        imag = i;
+    }
+
+    Complex operator+(const Complex &obj)
+    {
+        Complex result;
+        result.real = real + obj.real;
+        result.imag = imag + obj.imag;
+        return result;
+    }
+
+    void display()
+    {
+        cout << real << " + " << imag << "i" << endl;
+    }
 };
 
 int main()
 {
-  Box<int> intBox;
-  intBox.set(100);
+    Complex c1(2.5, 3.5);
+    Complex c2(1.5, 4.5);
 
-  Box<string> strBox;
-  strBox.set("Hello");
+    Complex sum = c1 + c2;
 
-  cout << intBox.get()<<" ";  // Output: 100
-  cout << strBox.get();       // Output: Hello
-  
+    cout << "Sum of complex numbers: ";
+    sum.display();
+
+    return 0;
 }
