@@ -84,11 +84,12 @@ print(len(name))
 # for k in range(0,10,2):
 #     print(k)
 
+
 def chai(n):
     print(n)
 
-chai("Muahammad Ali Siddiqui")
 
+chai("Muahammad Ali Siddiqui")
 
 
 # from index import chai
@@ -197,8 +198,10 @@ class Car:
     def __init__(self, brand, model):
         self.brand = brand
         self.model = model
+
     def full_name(self):
         return f"{self.brand} {self.model} "
+
 
 class ElectricCar(Car):
     def __init__(self, brand, model, battery_size):
@@ -211,6 +214,5 @@ class ElectricCar(Car):
 # print(my_car.brand)
 # print(my_car.model)
 
-my_tesla = ElectricCar("Tesla","Model 5","85 kWh")
+my_tesla = ElectricCar("Tesla", "Model 5", "85 kWh")
 print(my_tesla.full_name())
-
