@@ -29,7 +29,7 @@
 // };
 
 // int main() {
-//     // Animal a;         ❌ Error: cannot instantiate abstract class
+//     // Animal a;          Error: cannot instantiate abstract class
 //     Dog d;
 //     d.makeSound();       // Output: Dog says Woof!
 //     d.sleep();           // Output: Animal is sleeping.
@@ -110,49 +110,3 @@
 //   cout << strBox.get();       // Output: Hello
 
 // }
-
-#include <iostream>
-using namespace std;
-
-class Complex
-{
-    float real, imag;
-
-public:
-    Complex()
-    {
-        real = imag = 0;
-    }
-
-    Complex(float r, float i)
-    {
-        real = r;
-        imag = i;
-    }
-
-    Complex operator+(const Complex &obj)
-    {
-        Complex result;
-        result.real = real + obj.real;
-        result.imag = imag + obj.imag;
-        return result;
-    }
-
-    void display()
-    {
-        cout << real << " + " << imag << "i" << endl;
-    }
-};
-
-int main()
-{
-    Complex c1(2.5, 3.5);
-    Complex c2(1.5, 4.5);
-
-    Complex sum = c1 + c2;
-
-    cout << "Sum of complex numbers: ";
-    sum.display();
-
-    return 0;
-}
