@@ -10,7 +10,6 @@ public:
         real = r;
         imag = i;
     }
-
     Complex operator+(const Complex &obj)
     {
         Complex temp;
@@ -18,7 +17,6 @@ public:
         temp.imag = imag + obj.imag;
         return temp;
     }
-
     void display()
     {
         cout << real << " + " << imag << "i" << endl;
@@ -29,7 +27,6 @@ int main()
 {
     Complex c1(3, 2);
     Complex c2(1, 7);
-
     Complex c3 = c1 + c2;
 
     c3.display();

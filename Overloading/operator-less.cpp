@@ -9,12 +9,10 @@ public:
     {
         m = marks;
     }
-
     bool operator<(const Student &other)
     {
         return marks < other.marks;
     }
-
     int getmarks()
     {
         return marks;
