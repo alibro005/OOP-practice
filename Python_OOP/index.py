@@ -498,7 +498,7 @@
 #             print(f"One value: {a}")
 #         else:
 #             print("No value provided")
-        
+
 # d = Display()
 
 # d.show()           # Output: No value provided
@@ -515,4 +515,3 @@
 # print(m.add())             # Output: 0
 # print(m.add(5))            # Output: 5
 # print(m.add(1, 2, 3, 4))   # Output: 10
-

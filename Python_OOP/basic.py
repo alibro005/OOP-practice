@@ -182,14 +182,12 @@ chai("Muahammad Ali Siddiqui")
 # for i in even_generator(10):
 #     print(i)
 
-
 # def factorial(n):
 #     fact = 1
 #     if n == 0:
 #         return 1
 #     else:
 #         return n * factorial(n - 1)
-
 
 # print("The factorial is: ", factorial(5))
 
