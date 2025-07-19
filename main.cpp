@@ -85,28 +85,27 @@
 
 // }
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// template <class T>
-// class Box
-// {
-//   T value;
+template <class T>
+class Box
+{
+    T value;
 
-// public:
-//   void set(T val) { value = val; }
-//   T get() { return value; }
-// };
+public:
+    void set(T val) { value = val; }
+    T get() { return value; }
+};
 
-// int main()
-// {
-//   Box<int> intBox;
-//   intBox.set(100);
+int main()
+{
+    Box<int> intBox;
+    intBox.set(100);
 
-//   Box<string> strBox;
-//   strBox.set("Hello");
+    Box<string> strBox;
+    strBox.set("Hello");
 
-//   cout << intBox.get()<<" ";  // Output: 100
-//   cout << strBox.get();       // Output: Hello
-
-// }
+    cout << intBox.get() << " "; // Output: 100
+    cout << strBox.get();        // Output: Hello
+}
